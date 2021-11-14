@@ -1,4 +1,5 @@
 class Dinosaur < ApplicationRecord
   belongs_to :cage
-  has_one :species
+  has_many :herbivores
+  has_many :carnivores
 end
